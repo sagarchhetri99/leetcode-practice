@@ -32,7 +32,6 @@ var twoSum_HashMap = function (nums, target) {
 };
 
 const nums = [2, 7, 11, 15];
-
 console.log(twoSum_BruteForce(nums, 9));
 console.log(twoSum_HashMap(nums, 9));
 
