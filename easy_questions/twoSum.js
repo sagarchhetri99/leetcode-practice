@@ -32,11 +32,13 @@ var twoSum_HashMap = function (nums, target) {
 };
 
 const nums = [2, 7, 11, 15];
+
 console.log(twoSum_BruteForce(nums, 9));
-// console.log(twoSum_HashMap(nums, 9));
+console.log(twoSum_HashMap(nums, 9));
 
 //Thinking Process (Steps):
 //-I can try brute force the solution by using 2 for loops which iterates over the array however the time complexity is O(n^2).
+//-Use Hash map to reduce time complexity:
 //-We can calculate the compliment pair at each index in the array by using the target number minus the current value at index i.
-//Then record its compliment pair and its index into the hash map, if the hash map doesnt have the compliment pair. hash map= {7:0, 2:1}
-//-If hash map does contain the compliment pair, we return the current index and the index of the compliment pair.
+//-Then record it's compliment pair and it's index into the hash map if the hash map doesn't have the compliment pair. Hash map = {7:0, 2:1}
+//-If hash map does contain the compliment pair, return the current index and the index of the compliment pair.
