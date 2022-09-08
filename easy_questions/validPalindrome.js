@@ -23,8 +23,8 @@ console.log(isPalindrome(s));
 //Thinking Process (Steps):
 //1.) I want the string to be all lowercase and also replace all non-alphanumeric characters.
 //2.) Will use regex to replace all non-alphanumeric characters with "". /[^a-z0-9]/gi, ""
-//3.) Then I want to create leftIndex variable to keep track of right pointer and leftIndex variable to keep track of left pointer.
+//3.) Then I want to create leftIndex variable to keep track of left pointer and rightIndex variable to keep track of right pointer.
 //4.) Create a while loop until the pointers are equal to each other.
-//4a.) Create a conditon to see if values of pointers don't equal to each other else return false.
+//4a.) Create a conditon to see if values of pointers don't equal to each other, return false.
 //4b.) Compare the characters at both left and right index, increment leftIndex and decrement rightIndex.
-//5.) Return true when all values in the string are equal to each other.
+//5.) (exit loop) and return true when leftIndex is equal to rightIndex.
