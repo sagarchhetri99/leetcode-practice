@@ -27,13 +27,14 @@ var twoSum_HashMap = function (nums, target) {
     if (hashMap.has(num2)) {
       return [i, hashMap.get(num2)];
     }
-    hashMap.set(num1, i);
+    hashMap.set(i, num1);
+    console.log(hashMap);
   }
 };
 
-const nums = [2, 7, 11, 15];
-console.log(twoSum_BruteForce(nums, 9));
-console.log(twoSum_HashMap(nums, 9));
+const nums = [2, 3, 5, 3, 4, 6];
+// console.log(twoSum_BruteForce(nums, 9));
+console.log(twoSum_HashMap(nums, 10));
 
 //Thinking Process (Steps):
 //-I can try brute force the solution by using 2 for loops which iterates over the array however the time complexity is O(n^2).

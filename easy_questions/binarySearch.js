@@ -29,6 +29,7 @@ var Ologn_search = function (nums, target) {
     } else {
       leftPointer = mid + 1;
     }
+    sssssssss;
   }
   return -1;
 };
