@@ -4,18 +4,19 @@
 //typically using all the original letters exactly once.
 //Link: https://leetcode.com/problems/group-anagrams/
 
-// var groupAnagrams = function (strs) {
-//   hashMap = {};
-//   for (s of strs) {
-//     const keyStr = s.split("").sort().join("");
-//     if (hashMap[keyStr]) {
-//       hashMap[keyStr].push(s);
-//     } else {
-//       hashMap[keyStr] = [s];
-//     }
-//   }
-//   return Object.values(hashMap);
-// };
+var groupAnagrams = function (strs) {
+  hashMap = {};
+  for (s of strs) {
+    const keyStr = s.split("").sort().join("");
+    if (hashMap[keyStr]) {
+      hashMap[keyStr].push(s);
+    } else {
+      hashMap[keyStr] = [s];
+    }
+  }
+  return Object.values(hashMap);
+};
+
 var groupAnagrams2 = function (strs) {
   const sortStr = strs.map((str) => str.split("").sort().join(""));
   hashMap = {};
